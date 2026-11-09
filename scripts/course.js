@@ -56,7 +56,6 @@ const courses = [
 ];
 
 
-// Select HTML elements
 const courseContainer = document.querySelector("#course-container");
 const allButton = document.querySelector("#all-courses");
 const wddButton = document.querySelector("#wdd-courses");
@@ -73,55 +72,42 @@ function setActiveButton(activeButton) {
     activeButton.classList.add("active");
 }
 
-
-// Display courses on the page
 function displayCourses(courseList) {
 
-    // Clear the previous courses
     courseContainer.innerHTML = "";
 
-    // Create a card for each course
     courseList.forEach(course => {
 
         const courseCard = document.createElement("div");
 
         courseCard.classList.add("course-card");
 
-        // Add completed class to completed courses
         if (course.completed) {
             courseCard.classList.add("completed");
         }
-
-        // Add course information
         courseCard.innerHTML = `
             <h3>${course.subject} ${course.number}</h3>
             <p>${course.title}</p>
             <p>${course.credits} Credits</p>
         `;
 
-        // Add the card to the page
         courseContainer.appendChild(courseCard);
 
     });
 
-
-    // Calculate the total credits using reduce()
     const creditTotal = courseList.reduce((total, course) => {
         return total + course.credits;
     }, 0);
 
-    // Display the total credits
     totalCredits.textContent = `Total Credits: ${creditTotal}`;
 
 }
 
 
-// Display all courses when the page loads
 displayCourses(courses);
 setActiveButton(allButton);
 
 
-// Display all courses when All is clicked
 allButton.addEventListener("click", () => {
     displayCourses(courses);
     setActiveButton(allButton);
@@ -129,7 +115,6 @@ allButton.addEventListener("click", () => {
 });
 
 
-// Display WDD courses when WDD is clicked
 wddButton.addEventListener("click", () => {
 
     const wddCourses = courses.filter(course => {

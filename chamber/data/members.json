@@ -1,0 +1,58 @@
+[
+    {
+        "name": "ogba zoo",
+        "address": "Airport Road, Benin City",
+        "phone": "+2348033026283",
+        "website": "https://ogbazoo.com.ng",
+        "image": "images/ogba.jpg",
+        "membership": 3
+    },
+    {
+        "name": "OTI Hotel",
+        "address": "Sapele Road, Benin City",
+        "phone": "+2349150244444",
+        "website": "https://www.otihospitality.com",
+        "image": "images/oti.jpg",
+        "membership": 2
+    },
+    {
+        "name": "philip temile nature park",
+        "address": "irhihi Road, Benin City",
+        "phone": "+2347010089005",
+        "website": "https://www.instagram.com/philip_temilenaturepark/",
+        "image": "images/philip.jpg",
+        "membership": 1
+    },
+    {
+        "name": "kada plaza cinema & entertainment centre",
+        "address": "Sapele Road, Benin City",
+        "phone": "+2347076459489",
+        "website": "https://kadacinemas.com",
+        "image": "images/kada.jpg",
+        "membership": 3
+    },
+    {
+        "name": "prime mart by mozi",
+        "address": "off country home, Benin City",
+        "phone": "+2349046568395",
+        "website": "https://primemartbymorzi.com/",
+        "image": "images/prime.png",
+        "membership": 2
+    },
+    {
+        "name": "phil Hallmark supermarket",
+        "address": "Sapele Road, Benin City",
+        "phone": "+2348095597574",
+        "website": "https://philhallmark.com",
+        "image": "images/hall.jpg",
+        "membership": 1
+    },
+    {
+        "name": "blue pearl hotel & residence",
+        "address": "ugbor Road, Benin City",
+        "phone": "+2348137748851",
+        "website": "https://bluepearlhotel.com",
+        "image": "images/blue.jpg",
+        "membership": 2
+    }
+]

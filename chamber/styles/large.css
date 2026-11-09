@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1rem 3rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.8rem 1rem;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    #directory-container {
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #directory-container.list-view {
+        grid-template-columns: 1fr;
+    }
+
+    .business-card {
+        padding: 1.5rem;
+        min-height: 0px;
+        
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+}

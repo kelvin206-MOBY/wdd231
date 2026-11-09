@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abubakar kelvin">
+    <meta name="description" content="This is a directory page for the chamber of commerce website.">
+    <link rel="icon" href="images/benin.webp" type="image/webp">
+    <meta property="og:title" content="Benin City Chamber of Commerce">
+    <meta property="og:description" content="This is a directory page for the chamber of commerce website.">
+    <meta property="og:image" content="https://kelvin206-moby.github.io/wdd231/chamber/images/edo.webp">
+    <meta property="og:url" content="https://kelvin206-moby.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Chamber Directory</title>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">discover</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/edo.webp" alt="edo state" width="100">
+        <span>Benin City Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+    <main>
+            <h1>Chamber Directory</h1>
+
+            <p class="intro">
+            Discover businesses and services in Benin City, Edo State.
+            </p>
+            <div class="view-buttons">
+                <button id="grid-button" aria-label="grid directory">
+                    Grid
+                </button>
+
+                <button id="list-button" aria-label="list directory">
+                    List
+                </button>
+            </div>
+
+            <div id="directory-container">
+
+            </div>    
+    </main>       
+
+    <footer>
+        <div class="contact-info">
+           <h2>Benin city chamber of commerce</h2>
+           
+          <p>address: 1 ugbor village road,GRA, benin city.</p>
+          <p>email: kingmoby19@gmail.com</p>
+          <p>phone: +2348135458337</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://tiktok.com/@kingmoby206">
+            <img src="images/tik.webp" alt="visit us on TikTok" width="50">
+           </a>
+
+           <a href="https://www.facebook.com/profile.php?id=61568959712537">
+            <img src="images/face.jpg" alt="visit us on Facebook" width="50">
+           </a>
+
+           <a href="https://www.youtube.com/@kingMoby-206">
+            <img src="images/you.jpg" alt="visit us on YouTube" width="50">
+           </a>
+
+        </div>
+
+        <div class="footer-info">
+          <p>WDD231 class Project</p>
+          <p> Abubakar kelvin</p>
+          <span id="current-year"></span>&copy; Benin City Chamber of Commerce.
+          <p id="last-modified">last-modified: </p>
+        </div>
+    </footer>     
+    
+    
+
+</body>
+</html>
