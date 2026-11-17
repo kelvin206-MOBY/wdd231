@@ -172,3 +172,17 @@ footer h2 {
 footer p {
     margin: 0.5rem;
 }
+
+.spotlights {
+    grid-template-columns: 1fr;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.weather-forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
