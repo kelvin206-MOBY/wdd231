@@ -42,3 +42,11 @@ document.querySelector("#current-year").textContent =
 
 document.querySelector("#last-modified").textContent =
     `Last modified: ${document.lastModified}`;
+
+    const closeButtons = document.querySelectorAll(".close-modal");
+
+closeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        button.closest("dialog").close();
+    });
+});
