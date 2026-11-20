@@ -20,11 +20,9 @@
     grid-row: 2;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1rem; 
 }
 
-   
-}
 
     header {
         padding: 1rem 3rem;
@@ -156,3 +154,4 @@
         border-radius: 5px; 
     margin: 15px;
  }
+}
