@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abubakar kelvin">
+    <meta name="description" content="This is the membership page to join the benin city chamber of commerce.">
+    <link rel="icon" href="images/benin.webp" type="image/webp">
+    <meta property="og:title" content="Benin City Chamber of Commerce">
+    <meta property="og:description" content="This is membership page to join the benin city chamber of commerce.">
+    <meta property="og:image" content="https://kelvin206-moby.github.io/wdd231/chamber/images/edo.webp">
+    <meta property="og:url" content="https://kelvin206-moby.github.io/wdd231/chamber/join.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Benin City Chamber of Commerce - join</title>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">discover</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/edo.webp" alt="edo state" width="100">
+        <span>Benin City Chamber of Commerce</span>
+        <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+    <main class="join-main">
+        <h1> join the chamber of commerce</h1>
+        <form method="get" action="thankyou.html">
+            <label>
+              First Name
+              <input
+                  type="text"
+                  name="firstName"
+                  required
+                  autocomplete="given-name"
+                  title="..."
+             >
+          </label>
+          <label>
+            Last Name
+            <input
+            type="text"
+            name="lastName"
+            required
+            autocomplete="family-name"
+            title="..."
+            >
+          </label>
+
+          <label>
+            Organizational Title
+            <input
+            type="text"
+            name="OrganizationalTitle"
+            autocomplete="organization-title"
+            pattern="[A-Za-z -]{7,}"
+            title="..."
+            >
+          </label>
+
+          <label>
+            Email
+            <input
+            type="email"
+            name="email"
+            required
+            autocomplete="email"
+            placeholder="example@gmail.com"
+            title="Please enter a valid email address."
+            >
+          </label>
+
+          <label>
+            Phone Number
+            <input
+            type="tel"
+            name="phone"
+            required
+            autocomplete="tel"
+            title="..."
+            >
+          </label>
+
+          <label>
+            Business Name
+            <input
+            type="text"
+            name="organization"
+            required
+            autocomplete="organization"
+            title="..."
+            >
+          </label>
+
+
+          <label>
+             Membership Level
+             <select name="membership" required>
+                <option value="" disabled selected>Select Membership Level</option>
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+             </select>
+         </label>
+
+          <label>
+             Business Description
+           <textarea
+             name="description"
+             title="..."
+            ></textarea>
+         </label>  
+
+         <label>
+            Timestamp
+            <input
+            type="hidden"
+            name="timestamp"
+            id="timestamp"
+            >
+         </label>
+         <input type="submit" value="Apply for Membership">
+
+        </form>
+
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <article class="membership-card">
+                <h2>NP Membership</h2>
+                <p>This membership is free to join, no required payment.</p>
+                <a href="#np-modal">Learn more</a>
+            </article>
+
+            <article class="membership-card">
+               <h2>Bronze Membership</h2>
+               <p>Enjoy affordable membership benefits, business networking, and access to selected chamber events.</p>
+               <a href="#bronze-modal">Learn More</a>
+           </article>
+
+           <article class="membership-card">
+               <h2>Silver Membership</h2>
+               <p>Grow your business with additional advertising opportunities, training, and event discounts.</p>
+               <a href="#silver-modal">Learn More</a>
+           </article>
+
+          <article class="membership-card">
+              <h2>Gold Membership</h2>
+              <p>Get premium business exposure, exclusive networking opportunities, special events, and maximum benefits.</p>
+              <a href="#gold-modal">Learn More</a>
+          </article>
+
+        </section>
+        
+        <dialog id="np-modal">
+          <h2>NP Membership Benefits</h2>
+          <p>Designed for nonprofit organizations.</p>
+         <ul>
+             <li>Free chamber membership.</li>
+             <li>Access to selected chamber events.</li>
+             <li>Business networking opportunities.</li>
+             <li>Community development opportunities.</li>
+         </ul>
+          <form method="dialog">
+          <button>Close</button>
+          </form>
+       </dialog>
+
+
+       <dialog id="bronze-modal">
+           <h2>Bronze Membership Benefits</h2>
+           <p>An affordable option for growing businesses.</p>
+         <ul>
+          <li>Access to chamber networking events.</li>
+          <li>Business training opportunities.</li>
+          <li>Member business directory listing.</li>
+          <li>Discounts on selected events.</li>
+         </ul>
+         <form method="dialog">
+          <button>Close</button>
+         </form>
+       </dialog>
+
+       <dialog id="silver-modal">
+          <h2>Silver Membership Benefits</h2>
+          <p>More opportunities to promote and grow your business.</p>
+          <ul>
+            <li>All Bronze Membership benefits.</li>
+            <li>Priority business directory listing.</li>
+            <li>Advertising opportunities on the chamber website.</li>
+            <li>Discounted access to special events.</li>
+            <li>Advanced business training.</li>
+          </ul>
+         <form method="dialog">
+           <button>Close</button>
+         </form>
+       </dialog>
+
+       <dialog id="gold-modal">
+         <h2>Gold Membership Benefits</h2>
+         <p>Our premium membership for established and ambitious businesses.</p>
+         <ul>
+            <li>All Silver Membership benefits.</li>
+            <li>Premium homepage business spotlight.</li>
+            <li>Exclusive networking opportunities.</li>
+            <li>Free access to selected special events.</li>
+            <li>Premium advertising opportunities.</li>
+            <li>Priority business promotion.</li>
+         </ul>
+         <form method="dialog">
+           <button>Close</button>
+         </form>
+       </dialog>
+
+    </main>       
+
+    <footer>
+        <div class="contact-info">
+           <h2>Benin city chamber of commerce</h2>
+           
+          <p>address: 1 ugbor village road,GRA, benin city.</p>
+          <p>email: kingmoby19@gmail.com</p>
+          <p>phone: +2348135458337</p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://tiktok.com/@kingmoby206">
+            <img src="images/tik.webp" alt="visit us on TikTok" width="50">
+           </a>
+
+           <a href="https://www.facebook.com/profile.php?id=61568959712537">
+            <img src="images/face.jpg" alt="visit us on Facebook" width="50">
+           </a>
+
+           <a href="https://www.youtube.com/@kingMoby-206">
+            <img src="images/you.jpg" alt="visit us on YouTube" width="50">
+           </a>
+
+        </div>
+
+        <div class="footer-info">
+          <p>WDD231 class Project</p>
+          <p> Abubakar kelvin</p>
+          <span id="current-year"></span>&copy; Benin City Chamber of Commerce.
+          <p id="last-modified">last-modified: </p>
+        </div>
+    </footer>     
+    
+    
+
+</body>
+</html>
