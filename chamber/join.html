@@ -129,14 +129,7 @@
             ></textarea>
          </label>  
 
-         <label>
-            Timestamp
-            <input
-            type="hidden"
-            name="timestamp"
-            id="timestamp"
-            >
-         </label>
+         <input type="hidden" name="timestamp" id="timestamp">
          <input type="submit" value="Apply for Membership">
 
         </form>
@@ -191,9 +184,7 @@
           <li>Member business directory listing.</li>
           <li>Discounts on selected events.</li>
          </ul>
-         <form method="dialog">
-          <button>Close</button>
-         </form>
+         <button type="button" class="close-modal">Close</button> 
        </dialog>
 
        <dialog id="silver-modal">
@@ -206,9 +197,7 @@
             <li>Discounted access to special events.</li>
             <li>Advanced business training.</li>
           </ul>
-         <form method="dialog">
-           <button>Close</button>
-         </form>
+         <button type="button" class="close-modal">Close</button> 
        </dialog>
 
        <dialog id="gold-modal">
@@ -222,9 +211,8 @@
             <li>Premium advertising opportunities.</li>
             <li>Priority business promotion.</li>
          </ul>
-         <form method="dialog">
-           <button>Close</button>
-         </form>
+         
+         <button type="button" class="close-modal">Close</button> 
        </dialog>
 
     </main>       

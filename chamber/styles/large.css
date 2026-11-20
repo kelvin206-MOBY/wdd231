@@ -153,7 +153,6 @@
     color: white;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
+        border-radius: 5px; 
     margin: 15px;
  }
-}
